@@ -1,0 +1,20 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<title>Opera Link for WP7 login</title>
+	<meta name="Viewport" content="width=400; user-scaleable=no; initial-scale=1.0" />
+</head>
+
+
+	<div id="container">
+		<h1 id="msg">Please wait...</h1>
+	</div>
+  
+	<script>
+	document.getElementById("msg").innerHTML = "Logging you in...";
+	var x = " "+document.location+" ";
+	window.external.notify(x);
+	document.getElementById("msg").innerHTML = "Thanks for logging in!<br><br>Please wait until your data is downloaded for the first time.";
+	</script>
+	
+</html>

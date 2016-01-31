@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+        *{
+            font-family: sans-serif;
+        }
+        .jsLabel{
+            font-weight: bold;
+        }
+    </style>
+    <script type="text/javascript">
+        var autoRefreshEnabled = false;
+
+        function reloadImg() {
+            if (!autoRefreshEnabled)
+                return;
+            var img = document.getElementById('StillImage');
+            img.setAttribute('src', 'http://94.125.79.106/-wvhttp-01-/GetStillImage?q=99' + '&rnd=' + Math.random());
+            var timeLabel = document.getElementById('AutoRefreshTime');
+            timeLabel.innerText = new Date().toLocaleTimeString();
+        }
+
+        function autoRefresh() {
+            autoRefreshEnabled = !autoRefreshEnabled;
+            var statusLabel = document.getElementById('AutoRefreshStatus');
+            statusLabel.innerText = autoRefreshEnabled;
+            if (autoRefreshEnabled)
+                reloadImg();
+        }
+
+        function enableLive(){
+            document.getElementById('LiveContainer').innerHTML =
+                    '<img src="http://94.125.79.106/-wvhttp-01-/GetOneShot?frame_count=1000&q=99" width="640" height="480"/>';
+        }
+    </script>
+</head>
+<body>
+
+<h1>Webcam vom Abt in Richtung Münster</h1>
+
+<h2>Standbild</h2>
+<p>
+    <a href="#" onclick="autoRefresh()">auto refresh</a>
+    AutoRefresh is on: <span id="AutoRefreshStatus" class="jsLabel"></span>
+    Last refreshed at <span id="AutoRefreshTime" class="jsLabel"></span>
+</p>
+<p>
+    <img id="StillImage" width="640" height="480" onload="reloadImg()"
+         src="http://94.125.79.106/-wvhttp-01-/GetStillImage?q=99"/>
+</p>
+
+<h2>live</h2>
+<a href="#" onclick="enableLive()">Live-Bild einschalten (nicht mit Internet Exploer)</a>
+<p id="LiveContainer">
+    <!-- <img src="http://94.125.79.106/-wvhttp-01-/GetOneShot?frame_count=1000&q=99" width="640" height="480"/> -->
+</p>
+
+</body>
+</html>

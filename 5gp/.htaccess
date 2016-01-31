@@ -1,0 +1,10 @@
+Redirect /phamrathaus http://www.parken-in-ulm.de/parkhaeuser/rathaus.php
+Redirect /phdeutschhaus http://www.parken-in-ulm.de/parkhaeuser/deutschhaus.php
+Redirect /phfischerviertel http://www.parken-in-ulm.de/parkhaeuser/fischerviertel.php
+Redirect /phsalzstadel http://www.parken-in-ulm.de/parkhaeuser/salzstadel.php
+Redirect /phsedelhof http://www.parken-in-ulm.de/parkhaeuser/sedelhof.php
+Redirect /phfrauenstrae http://www.parken-in-ulm.de/parkhaeuser/frauenstrasse.php
+Redirect /phccunordbasteicenter http://www.parken-in-ulm.de/parkhaeuser/congress_nord.php
+Redirect /phccusdmaritimhotel http://www.parken-in-ulm.de/parkhaeuser/congress_sued.php
+Redirect /phkornhaus http://www.parken-in-ulm.de/parkhaeuser/kornhaus.php
+Redirect /phtheater http://www.parken-in-ulm.de/parkhaeuser/theater.php

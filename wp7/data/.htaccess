@@ -1,0 +1,3 @@
+Redirect /wp7/data/haltestellen http://rauscheronline.de/wp7/data/haltestellen.json
+Redirect /wp7/data/abfahrt http://h.fs-et.de/api.php
+

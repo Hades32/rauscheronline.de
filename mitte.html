@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+        *{
+            font-family: sans-serif;
+        }
+        .jsLabel{
+            font-weight: bold;
+        }
+    </style>
+    <script type="text/javascript">
+        var autoRefreshEnabled = false;
+
+        function reloadImg() {
+            if (!autoRefreshEnabled)
+                return;
+            var img = document.getElementById('StillImage');
+            img.setAttribute('src', 'http://94.125.79.44/jpg/1/image.jpg' + '?rnd=' + Math.random());
+            var timeLabel = document.getElementById('AutoRefreshTime');
+            timeLabel.innerText = new Date().toLocaleTimeString();
+        }
+
+        function autoRefresh() {
+            autoRefreshEnabled = !autoRefreshEnabled;
+            var statusLabel = document.getElementById('AutoRefreshStatus');
+            statusLabel.innerText = autoRefreshEnabled;
+            if (autoRefreshEnabled)
+                reloadImg();
+        }
+
+    </script>
+</head>
+<body>
+
+<h1>Webcam Neue Mitte Ulm</h1>
+
+<h2>Standbild</h2>
+<p>
+    <a href="#" onclick="autoRefresh()">auto refresh</a>
+    AutoRefresh is on: <span id="AutoRefreshStatus" class="jsLabel"></span>
+    Last refreshed at <span id="AutoRefreshTime" class="jsLabel"></span>
+</p>
+<p>
+    <img id="StillImage" width="640" height="480" onload="reloadImg()"
+         src="http://94.125.79.44/jpg/1/image.jpg"/>
+</p>
+
+</body>
+</html>

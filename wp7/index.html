@@ -1,0 +1,214 @@
+﻿<!Doctype html>
+<html>
+<head>
+<title>Martin Rauscher</title>
+<style type="text/css">
+/* A font by Jos Buivenga (exljbris) -> www.exljbris.com */
+@font-face {
+	font-family: Museo Sans;
+	src: url('http://rauscheronline.de/MuseoSans.otf') format("opentype");
+}
+head,body{
+	background-color: #9d9d9d;
+	font-family: Museo Sans, Arial, Sans-Serif;
+	color: #fff;
+	text-shadow: 2px 2px 6px black;
+}
+p{
+	font-family: Sans-Serif;
+}
+a{
+	font-weight: bold;
+	color: #ccf;
+	text-decoration:none;
+}
+a:visited{
+	font-weight: bold;
+	color: #e3e3ff;
+}
+a:before{
+	content: "<";
+}
+a:after{
+	content: ">";
+}
+article,aside,details,figcaption,figure, 
+footer,header,hgroup,menu,nav,section { 
+	display:block; 
+}
+section{
+	margin: 30px;
+}
+h1{
+	color: #9696FF;
+	text-shadow: 1px 1px 6px black;
+}
+h2{
+	color: #A6A6EA;
+	text-shadow: 1px 1px 6px black;
+}
+h3{
+	color: #d9d9ff;
+	text-shadow: 1px 1px 6px black;
+}
+#bottom{
+	position: fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	height: 800px;
+	background-image: url(../bg.png);
+	background-repeat: repeat-x;
+	z-index:-110;
+}
+#bottom > img{
+	position: absolute;
+	right:0;
+	bottom:0;
+}
+#header{
+	font-size: 110px;
+	margin-left: 50px;
+	margin-top:35px;
+	margin-bottom: 20px;
+}
+.subHead{
+	font-size: 30px;
+	margin-left: 50px;
+	margin-bottom: 20px;
+}
+.subHead object{
+	height: 100px;
+	width: 100px;
+	display:inline;
+	margin-bottom: -70px;
+}
+header > img{
+	display: inline;
+	width: 100px;
+	height: 100px;
+	vertical-align: Middle;	
+}
+header{
+	font-size: 30px;
+}
+.imglist{
+	width: 100%;
+	height: 450px;
+}
+.imglist > header{
+	height: 50px;
+	font-size: 1em;
+}
+.imglist > img{
+	width: 240px;
+	display: inline:
+}
+.app > p{
+	width: 700px;
+}
+</style>
+<!--[if lte IE 8]>
+<style type="text/css">
+#blogroll{
+	filter: Shadow(Color=#000000, Direction=135, Strength=3);
+}
+head,body{
+	filter: Shadow(Color=#000000, Direction=135, Strength=3);
+	/*filter: glow(color=#000000,strength=3);
+	filter: dropshadow(color=#000000,offX=2,offY=2);*/
+}
+</style>
+<![endif]-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21051303-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+
+<div id="header">Martin Rauscher</div>
+
+<div class="subHead">
+	Windows Phone 7 Apps
+</div>
+
+<div id="blogroll">
+<ul>
+<li><a href="#fernsehprogramm">Dein Fernsehprogramm!</a></li>
+<li><a href="#operalink">Opera Link for WP7</a></li>
+<li><a href="#uniulm">Uni Ulm App</a></li>
+</ul>
+</div>
+
+<section id="fernsehprogramm" class="app">
+	<header>
+		<img src="fernsehprogramm/icon.png"/>
+		Dein Fernsehprogramm!
+	</header>
+	<p>Mit "Dein Fernsehprogramm!" hast du immer das aktuelle Fersehprogramm deiner Lieblingssender im Blick.</p>
+	<p>Einfach deine Lieblingssender in der Senderliste auswählen und schon bist du dabei!</p>
+	<p>v1.1 verbessert die Download-Performance und verhindert so einige abstürtze</p>
+	<p>v1.2 zeigt das Programm ab jetzt +4 Studen und verbessert die Fehlermeldungen falls kein Internet verfügbar ist</p>
+	<div class="imglist">
+		<header>
+			Bilder
+		</header>
+		<img src="fernsehprogramm/screen_program.png"/>
+		<img src="fernsehprogramm/screen_list.png"/>
+		<img src="fernsehprogramm/screen_start.png"/>
+	</div>
+</section>
+
+<section id="operalink" class="app">
+	<header>
+		<img src="operalink/icon.png"/>
+		Opera Link for WP7
+	</header>
+	<p>This tool gives you full access to your Bookmarks, Notes and SpeedDials from your Opera browser (Mini, Mobile and Desktop)!</p>
+	<p>To be able to use this tool you have to enable Opera Link in Opera. For Opera Mobile and Opera Mini you can find this under options. On the desktop click the "O" menu and choose synchronize Opera.</p>
+	<p>More information and feedback (or donations) at <a href="http://my.opera.com/Hades32/blog/2010/11/08/opera-link-for-wp7">my.opera.com/Hades32</a></p>
+	<div class="imglist">
+		<header>
+			Bilder
+		</header>
+		<img src="operalink/speeddial.png"/>
+		<img src="operalink/bookmarks.png"/>
+		<img src="operalink/notes.png"/>
+	</div>
+</section>
+
+<section id="uniulm" class="app">
+	<header>
+		<img src="uniulm/icon.png"/>
+		Uni Ulm App
+	</header>
+	<p>Die Uni Ulm App gibt euch schnellsten Zugriff auf den aktuellen Mensaplan. Außerdem kann sie euch automatisch ins Uni "welcome" WLAN einloggen!</p>
+	<p>v1.1 bringt cachen der aktuellen Woche (kein neues laden bei jedem Start), eine hübsche Lade-Animation und die App startet immer auf der "Heute" Seite.</p>
+	<p>v1.2 WLAN login</p>
+	<p>v1.3 Fehlerbereinigung, WLAN Login geht wieder</p>
+	<p>Aktuelle Infos und Feedback unter <a href="http://martinrauscher.posterous.com/uni-ulm-app-fur-windows-phone-7">http://martinrauscher.posterous.com/uni-ulm-app-fur-windows-phone-7</a></p>
+	<p>Legales: Das ist eine Studenten-App, sie ist nicht offiziell von der Universität Ulm.</p>
+	<div class="imglist">
+		<header>
+			Bilder
+		</header>
+		<img src="uniulm/Screenshot.png"/>
+	</div>
+</section>
+
+<div id="bottom">
+<img src="../ich_trans.png"/>
+</div>
+
+</body>
+</html>

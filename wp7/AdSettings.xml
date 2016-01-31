@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AdSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CultureDescriptors>
+	<AdCultureDescriptor CultureName="default">
+		<Probabilities Probability="50" AdType="InnerActive" AppID="MartinRauscher_OperaLinkforWP_WP" />
+		<Probabilities Probability="25" AdType="PubCenter" AppID="0c2f18d8-91df-4bcc-96b4-3b4dcd1c2422" SecondaryID="10022522" />
+		<Probabilities Probability="25" AdType="AdMob" AppID="a151044bf34369e"/>
+	 </AdCultureDescriptor>
+	</CultureDescriptors>
+</AdSettings>
