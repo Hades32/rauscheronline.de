@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Martin Rauscher</title>
+<link rel="openid.server" href="https://meinguter.name/index.php/serve">
+<link rel="openid.delegate" href="http://hades32.meinguter.name">
+<style type="text/css">
+/* A font by Jos Buivenga (exljbris) -> www.exljbris.com */
+@font-face {
+	font-family: Museo Sans;
+	src: url('http://rauscheronline.de/MuseoSans.otf') format("opentype");
+}
+head,body{
+	background-color: #9d9d9d;
+	font-family: Museo Sans, Arial, Sans-Serif;
+	color: #fff;
+	text-shadow: 2px 2px 6px black;
+}
+p{
+	font-family: Sans-Serif;
+}
+a{
+	font-weight: bold;
+	color: #ccf;
+	text-decoration:none;
+}
+a:visited{
+	font-weight: bold;
+	color: #e3e3ff;
+}
+a:before{
+	content: "<";
+}
+a:after{
+	content: ">";
+}
+h1{
+	color: #9696FF;
+	text-shadow: 1px 1px 6px black;
+}
+h2{
+	color: #A6A6EA;
+	text-shadow: 1px 1px 6px black;
+}
+h3{
+	color: #d9d9ff;
+	text-shadow: 1px 1px 6px black;
+}
+#bottom{
+	position: fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	height: 800px;
+	background-image: url(bg.png);
+	background-repeat: repeat-x;
+	z-index:-110;
+}
+#bottom > img{
+	position: absolute;
+	right:0;
+	bottom:0;
+}
+#header{
+	font-size: 110px;
+	margin-left: 50px;
+	margin-top: 35px;
+	margin-bottom: 20px;
+}
+.subHead{
+	font-size: 30px;
+	margin-left: 50px;
+	margin-bottom: 20px;
+}
+.subHead object{
+	height: 100px;
+	width: 100px;
+	display:inline;
+	margin-bottom: -70px;
+}
+#cv{
+	margin-left:50px;
+	margin-top: 100px;
+}
+#blogroll{
+	font-family: Sans-Serif;
+	font-size: 24px;
+	margin-top: 150px;
+	margin-left: 50px;
+}
+#blogroll li{
+	list-style-type:none;
+	margin-right:10px;
+	margin-top: 30px;
+}
+#blogroll img{
+	margin-right:4px;
+	margin-bottom:-10px;
+	width:32px;
+	height:32px;
+}
+#born{
+	font-size: 24px;
+}
+#mailsign{
+	margin-bottom: -5px ! important;
+	margin-left: 2px ! important;
+	margin-right: 2px ! important;
+	height: 20px ! important;
+	width: 20px ! important;
+}
+</style>
+<!--[if lte IE 8]>
+<style type="text/css">
+#blogroll{
+	filter: Shadow(Color=#000000, Direction=135, Strength=3);
+}
+head,body{
+	filter: Shadow(Color=#000000, Direction=135, Strength=3);
+	/*filter: glow(color=#000000,strength=3);
+	filter: dropshadow(color=#000000,offX=2,offY=2);*/
+}
+</style>
+<![endif]-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21051303-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript">
+function writemail(e)
+{
+	// hopefully this prevents spam bots
+	var d = "rauscheronline.de";
+	var u = "martin@";
+	document.location = "mailto:"+u+d;
+	return false;
+}
+</script>
+</head>
+<body>
+
+<div id="header">Martin Rauscher</div>
+
+<div class="subHead">
+	.NET Software Engineer - WPF, Silverlight, <a href="./wp7">WP7 Apps</a>
+</div>
+<div class="subHead">
+	Alumnus (Dipl.Inf.) of the <a href="http://www.uni-ulm.de/en/universitaet.html">University of Ulm</a>
+	
+    <object type="image/svg+xml" 
+    width="100px" height="100px"
+    data="UniUlmLogo.svg">
+		<span>UUlm</span>
+	</object>
+	<br>
+	My <a href="cv.html">Curriculum Vitae</a>
+</div>
+
+<div id="blogroll">
+<ul>
+<li><img src="posterous_32.png"><a href="http://martinrauscher.posterous.com">My personal blog</a></li>
+<li><img src="twitter_32.png"><a href="http://twitter.com/hades32">Me @ Twitter</a></li>
+<li><img src="facebook_32.png"><a href="http://facebook.com/martin.rauscher.de">Me @ Facebook</a></li>
+<li><img src="http://static.myopera.com/favicon.ico"><a href="http://my.opera.com/hades32">Me @ MyOpera</a></li>
+<li><img src="email_32.png"><a href="#" onclick="writemail();">martin<img id="mailsign" src="mailsign.png">rauscheronline.de</a></li>
+</ul>
+</div>
+
+
+<div id="bottom">
+<img src="ich_trans.png">
+</div>
+
+</body>
+</html>
