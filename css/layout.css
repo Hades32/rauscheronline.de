@@ -1,0 +1,254 @@
+/* A font by Jos Buivenga (exljbris) -> www.exljbris.com */
+
+@font-face {
+    font-family: Museo Sans;
+    src: url('../assets/MuseoSans.otf') format("opentype");
+}
+
+/*
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
+ */
+
+body {
+  /*
+    color: #526066;
+    */
+    background: transparent url('../assets/bg.jpg') 0 0 no-repeat fixed;
+    background-size: cover;
+    font-family: Museo Sans,Arial,Sans-Serif;
+}
+
+.pure-g, .pure-g [class *="pure-u"] {
+    font-family: Museo Sans,Arial,Sans-Serif;
+}
+
+h2,
+h3 {
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.6em;
+}
+
+/*
+ * -- Layout Styles --
+ */
+
+.l-content {
+    margin: 0 auto;
+}
+
+.l-box {
+    padding: 0.5em 2em;
+}
+
+/*
+ * -- MENU STYLES --
+ * Make the menu have a very faint box-shadow.
+ */
+
+.pure-menu {
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+    background: white;
+}
+
+/*
+ * -- BANNER --
+ * The top banner with the headings. By using a combination
+ * of `display: table;` and `display: table-cell;`, we can
+ * vertically center the text.
+ */
+
+.banner {
+    text-align: center;
+    /*
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/bg.jpg', sizingMethod='scale');
+    */
+    height: 200px;
+    width: 100%;
+    margin-bottom: 3em;
+    display: table;
+}
+
+.banner-head {
+    display: table-cell;
+    background: rgba(0,0,0, 0.2);
+    vertical-align: middle;
+    margin-bottom: 0;
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+    text-shadow: 0 1px 1px black;
+}
+
+/*
+ * -- info-boxes TABLE WRAPPER --
+ * This element wraps up all the info-boxes table elements
+ */
+
+.info-boxes-tables,
+.information {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.info-boxes-tables {
+    margin-bottom: 3.125em;
+    text-align: center;
+}
+
+/*
+ * -- info-boxes TABLE  --
+ * Every info-boxes table has the .info-boxes-table class
+ */
+
+.info-boxes-table {
+    border: 1px solid #ddd;
+    margin: 0 0.5em 2em;
+    padding: 0 0 3em;
+    background: white;
+}
+
+/*
+ * -- info-boxes TABLE HEADER COLORS --
+ * Choose a different color based on the type of info-boxes table.
+ */
+
+.info-boxes-table-free .info-boxes-table-header {
+    background: #519251;
+}
+
+.info-boxes-table-biz .info-boxes-table-header {
+    background: #213653;
+}
+
+/*
+ * -- info-boxes TABLE HEADER --
+ * By default, a header is black/white, and has some styles for its <h2> name.
+ */
+
+.info-boxes-table-header {
+    background: #111;
+    color: #fff;
+    margin: -1px -1px 0 -1px;
+}
+
+.info-boxes-table-header h2 {
+    margin: 0;
+    padding-top: 2em;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+/*
+ * -- info-boxes TABLE PRICE --
+ * Styles for the price and the corresponding <span>per month</span>
+ */
+
+.info-boxes-table-price {
+    font-size: 6em;
+    margin: 0.2em 0 0;
+    font-weight: 100;
+}
+
+.info-boxes-table-price span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.2em;
+    padding-bottom: 2em;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    *color: #fff;
+}
+
+/*
+ * -- info-boxes TABLE LIST --
+ * Each info-boxes table has a <ul> which is denoted by the .info-boxes-table-list class
+ */
+
+.info-boxes-table-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/*
+ * -- info-boxes TABLE LIST ELEMENTS --
+ * Styles for the individual list elements within each info-boxes table
+ */
+
+.info-boxes-table-list li {
+    padding: 0.8em 0;
+    background: #f7f7f7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.info-boxes-table-list li:nth-child(1) {
+  font-weight: 700;
+}
+/*
+ * -- info-boxes TABLE BUTTON --
+ * Styles for the "Choose" button at the bottom of a info-boxes table.
+ * This inherits from Pure Button.
+ */
+
+.button-choose {
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #333;
+    border-radius: 2em;
+    font-weight: bold;
+    position: relative;
+    bottom: -1.5em;
+}
+
+.information-head {
+    color: black;
+    font-weight: 500;
+}
+
+.footer {
+    background: #111;
+    color: #888;
+    text-align: center;
+}
+
+.footer a {
+    color: #ddd;
+}
+
+/*
+ * -- TABLET MEDIA QUERIES --
+ * On tablets, we want to slightly adjust the size of the banner
+ * text and add some vertical space between the various info-boxes tables
+ */
+
+@media (min-width: 767px) {
+    .banner-head {
+        font-size: 4em;
+    }
+
+    .info-boxes-table {
+        margin-bottom: 0;
+    }
+}
+
+/*
+ * -- PHONE MEDIA QUERIES --
+ * On phones, we want to reduce the height and font-size of the banner further
+ */
+
+@media (min-width: 480px) {
+    .banner {
+        height: 400px;
+    }
+
+    .banner-head {
+        font-size: 3em;
+    }
+}
