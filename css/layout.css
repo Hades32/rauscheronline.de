@@ -118,11 +118,11 @@ p {
  * Choose a different color based on the type of info-boxes table.
  */
 
-.info-boxes-table-free .info-boxes-table-header {
+.info-boxes-table-uulm .info-boxes-table-header {
     background: #519251;
 }
 
-.info-boxes-table-biz .info-boxes-table-header {
+.info-boxes-table-tss .info-boxes-table-header {
     background: #213653;
 }
 
@@ -145,21 +145,26 @@ p {
 }
 
 /*
- * -- info-boxes TABLE PRICE --
- * Styles for the price and the corresponding <span>per month</span>
+ * -- info-boxes header
  */
 
-.info-boxes-table-price {
-    font-size: 6em;
-    margin: 0.2em 0 0;
-    font-weight: 100;
+.info-boxes-logo {
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
 }
 
-.info-boxes-table-price span {
+.info-boxes-logo * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.info-boxes-table-header p {
     display: block;
     text-transform: uppercase;
-    font-size: 0.2em;
-    padding-bottom: 2em;
+    font-size: 1.2em;
+    padding: 1em;
+    margin: 0;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
     *color: #fff;
@@ -212,14 +217,73 @@ p {
     font-weight: 500;
 }
 
-.footer {
-    background: #111;
-    color: #888;
+.bullshit-bingo {
     text-align: center;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 3em;
+    display: table;
 }
 
-.footer a {
-    color: #ddd;
+.bullshit-bingo h1 {
+  margin-top: 0.3em;
+}
+
+.bullshit-bingo h1 span {
+  font-size: 0.3em;
+}
+
+.bullshit-bingo-content {
+    display: table-cell;
+    background: white;
+    vertical-align: middle;
+    margin-bottom: 0;
+    padding-bottom: 1em;
+    font-size: 2em;
+    font-weight: 500;
+    text-shadow: 0 1px 1px black;
+}
+
+.footer {
+    background: rgba(17,17,17, 0.10);
+    color: white;
+    text-align: center;
+    padding-top: 0.1em;
+    padding-bottom: 2em;
+}
+
+.footer a img {
+    height: 1em;
+    margin-bottom: -0.2em;
+    padding: 0;
+}
+
+.contact-option {
+  display: inline-block;
+  text-decoration: none;
+  background-color: white;
+  margin: 1em 3em;
+  padding: 0;
+  padding-bottom: 1em;
+  -webkit-transition: transform 0.1s ease 0;
+  -moz-transition: transform 0.1s ease 0;
+  transition: transform 0.1s ease 0;
+}
+
+.contact-option:hover {
+  transform: scale(1.3);
+}
+
+.contact-option * {
+  padding: 0.5em 1em;
+  color: #111;
+}
+
+.contact-option h2 {
+  color: white;
+  background-color: #213653;
+  margin: 0;
+  margin-bottom: 0.5em;
 }
 
 /*
