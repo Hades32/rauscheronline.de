@@ -333,11 +333,11 @@ p {
   margin-bottom: 0.5em;
 }
 
-@media screen and (max-width: 480px) {
-    .pure-menu-heading {
-      display: none;
-    }
+@media screen and (max-width: 600px) {
+  .pure-menu-horizontal .pure-menu-heading {
+    display: none;
+  }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 600px) {
 }
