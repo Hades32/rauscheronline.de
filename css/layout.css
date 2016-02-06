@@ -64,25 +64,43 @@ p {
  */
 
 .banner {
-    text-align: center;
-    /*
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/bg.jpg', sizingMethod='scale');
-    */
-    height: 200px;
-    width: 100%;
-    margin-bottom: 3em;
-    display: table;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin-bottom: 3em;
+  background: rgba(0,0,0, 0.2);
+  text-shadow: 0 1px 1px black;
 }
 
-.banner-head {
-    display: table-cell;
-    background: rgba(0,0,0, 0.2);
-    vertical-align: middle;
-    margin-bottom: 0;
-    font-size: 2em;
-    color: white;
-    font-weight: 500;
-    text-shadow: 0 1px 1px black;
+.banner .text {
+  align-self: center;
+}
+
+.banner .pic {
+  align-self: auto;
+}
+
+.banner h1 {
+  text-align: right;
+  font-size: 4em;
+  color: white;
+  font-weight: 500;
+}
+
+.banner h2 {
+  text-align: right;
+  color: white;
+  font-weight: 500;
+}
+
+.banner img {
+  display: flex;
+  align-self: flex-end;
+  margin: 3em;
+  height: 80%;
+  max-height: 13em;
 }
 
 /*
@@ -92,8 +110,8 @@ p {
 
 .info-boxes-tables,
 .information {
-    max-width: 980px;
-    margin: 0 auto;
+  max-width: 980px;
+  margin: 0 auto;
 }
 
 .info-boxes-tables {
@@ -315,33 +333,11 @@ p {
   margin-bottom: 0.5em;
 }
 
-/*
- * -- TABLET MEDIA QUERIES --
- * On tablets, we want to slightly adjust the size of the banner
- * text and add some vertical space between the various info-boxes tables
- */
-
-@media (min-width: 767px) {
-    .banner-head {
-        font-size: 4em;
-    }
-
-    .info-boxes-table {
-        margin-bottom: 0;
+@media screen and (max-width: 480px) {
+    .pure-menu-heading {
+      display: none;
     }
 }
 
-/*
- * -- PHONE MEDIA QUERIES --
- * On phones, we want to reduce the height and font-size of the banner further
- */
-
-@media (min-width: 480px) {
-    .banner {
-        height: 400px;
-    }
-
-    .banner-head {
-        font-size: 3em;
-    }
+@media (max-width: 767px) {
 }
