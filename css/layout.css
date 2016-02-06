@@ -227,10 +227,13 @@ p {
 
 .bullshit-bingo h1 {
   margin-top: 0.3em;
+  line-height: 0.1em;
+  margin-top: 0.7em;
 }
 
-.bullshit-bingo h1 span {
+.bullshit-bingo h2 {
   font-size: 0.3em;
+  margin: 0;
 }
 
 .bullshit-bingo-content {
@@ -244,12 +247,38 @@ p {
     text-shadow: 0 1px 1px black;
 }
 
+.tag-cloud {
+  max-width: 800px;
+  margin: 0 auto;
+  color: darkgreen;
+}
+
+
+.tag-cloud p {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+.tag-cloud p.small {
+  font-size: 0.5em;
+  color: dimgray;
+}
+
+.tag-cloud p.big {
+  font-size: 1.5em;
+  color: midnightblue;
+}
+
 .footer {
     background: rgba(17,17,17, 0.10);
     color: white;
     text-align: center;
     padding-top: 0.1em;
     padding-bottom: 2em;
+}
+
+.footer h1 {
+    text-shadow: 0 1px 1px black;
 }
 
 .footer a img {
